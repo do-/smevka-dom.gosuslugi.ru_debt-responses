@@ -1,3 +1,5 @@
+const path = require ('path')
+
 module.exports = {
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -7,6 +9,16 @@ get_rsid_of_export_debt_requests:
     function () {
 
 		return 30441
+    
+    },
+
+////////////////////////////////////////////////////////////////////////////////
+
+get_xsd_path_of_export_debt_requests:
+
+    function () {
+
+		return path.join (__dirname, '..', 'Static/dom-gosuslugi-ru-smev3-debt-responses.xsd')
     
     },
 
@@ -43,8 +55,8 @@ get_response_of_export_debt_requests:
 				   "address" : "153045, Ивановская обл, г. Иваново, ул. 3 Июня, д. 14"
 				},
 				"period" : {
-				   "start-date" : "2018-02-01+03:00",
-				   "end-date" : "2021-01-31+03:00"
+				   "start-date" : "2018-02-01",
+				   "end-date" : "2021-01-31"
 				},
 				"organization" : {
 				   "organization-root-id" : "6eef689e-48bb-4eb0-9c11-18b6db9909b7",
@@ -63,9 +75,9 @@ get_response_of_export_debt_requests:
 				"status" : "PROCESSED",
 				"result" : "4",
 				
-				"creation-date" : "2021-02-04+03:00",
-				"sent-date" : "2021-02-04+03:00",
-				"response-date" : "2021-02-08+03:00",
+				"creation-date" : "2021-02-04",
+				"sent-date" : "2021-02-04",
+				"response-date" : "2021-02-08",
 				"subrequest" : {
 				   "organization" : {
 					  "organization-root-id" : "ad50290c-6ad9-11eb-9439-0242ac130002",
